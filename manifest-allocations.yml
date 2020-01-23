@@ -10,3 +10,5 @@ applications:
     REGISTRATION_SERVER_ENDPOINT: http://registration-nitish.cfapps.io/
   services:
   - tracker-allocations-database
+  - tracker-circuit-breaker-dashboard
+  - tracker-amqp
