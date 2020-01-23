@@ -51,10 +51,17 @@ namespace IntegrationTest
         [Fact]
         public void TestBasicFlow()
         {
+            try
+            {
             _allocationsServer.Start();
             _registrationServer.Start();
             _backlogServer.Start();
             _timesheetsServer.Start();
+            }
+            catch(Exception ex)
+            {
+               Console.WriteLine(ex.InnerException.Message);
+            }
 
             HttpResponseMessage response;
 

@@ -68,7 +68,7 @@ namespace IntegrationTest
             private void WaitUntilReady()
             {
                 const int retryThreshold = 6;
-                const int delay = 1000;
+                const int delay = 5000;
                 var httpClient = new HttpClient();
 
                 var tries = 0;
